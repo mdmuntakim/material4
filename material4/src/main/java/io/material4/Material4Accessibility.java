@@ -5,8 +5,6 @@ import android.view.View;
 
 import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
-import androidx.core.graphics.ColorUtils;
-
 /** WCAG contrast helpers and touch-target enforcement for Material 4 components. */
 public final class Material4Accessibility {
 
@@ -14,11 +12,23 @@ public final class Material4Accessibility {
     }
 
     public static double contrastRatio(@ColorInt int foreground, @ColorInt int background) {
-        double fg = ColorUtils.calculateLuminance(foreground);
-        double bg = ColorUtils.calculateLuminance(background);
+        double fg = relativeLuminance(foreground);
+        double bg = relativeLuminance(background);
         double lighter = Math.max(fg, bg);
         double darker = Math.min(fg, bg);
         return (lighter + 0.05) / (darker + 0.05);
+    }
+
+    /** WCAG 2.2 relative luminance in the sRGB colour space. */
+    public static double relativeLuminance(@ColorInt int colour) {
+        double red = linear(((colour >> 16) & 0xFF) / 255.0);
+        double green = linear(((colour >> 8) & 0xFF) / 255.0);
+        double blue = linear((colour & 0xFF) / 255.0);
+        return 0.2126 * red + 0.7152 * green + 0.0722 * blue;
+    }
+
+    private static double linear(double channel) {
+        return channel <= 0.03928 ? channel / 12.92 : Math.pow((channel + 0.055) / 1.055, 2.4);
     }
 
     public static boolean meetsWcagAa(@ColorInt int foreground, @ColorInt int background,
