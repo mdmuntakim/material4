@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ThemeOverlay.Material4.ReducedMotion" parent="ThemeOverlay.Material4">
+        <item name="m4ReducedMotion">true</item>
+        <item name="m4MorphOnPress">false</item>
+        <item name="m4HapticsEnabled">false</item>
+        <item name="m4MotionShort">0</item>
+        <item name="m4MotionMedium">0</item>
+        <item name="m4MotionLong">0</item>
+    </style>
+</resources>

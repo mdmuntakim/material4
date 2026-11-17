@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Aurora / depth / shape / motion defaults for the light theme. -->
+    <style name="ThemeOverlay.Material4" parent="">
+        <item name="m4AuroraStart">@color/m4_aurora_start</item>
+        <item name="m4AuroraMid">@color/m4_aurora_mid</item>
+        <item name="m4AuroraEnd">@color/m4_aurora_end</item>
+        <item name="m4OnAurora">#FF0B1020</item>
+        <item name="m4GlassSurface">@color/m4_glass_light</item>
+        <item name="m4GlassBorderStart">@color/m4_border_light_start</item>
+        <item name="m4GlassBorderEnd">@color/m4_border_light_end</item>
+        <item name="m4InnerGlow">@color/m4_glow_light</item>
+        <item name="m4Success">@color/m4_success</item>
+        <item name="m4Warning">@color/m4_warning</item>
+
+        <item name="m4Elevation1">1dp</item>
+        <item name="m4Elevation2">2dp</item>
+        <item name="m4Elevation3">4dp</item>
+        <item name="m4Elevation4">8dp</item>
+        <item name="m4Elevation5">16dp</item>
+        <item name="m4BorderWidth">1dp</item>
+        <item name="m4GlowWidth">12dp</item>
+
+        <item name="m4RadiusSmall">10dp</item>
+        <item name="m4RadiusMedium">16dp</item>
+        <item name="m4RadiusLarge">24dp</item>
+        <item name="m4RadiusExtraLarge">32dp</item>
+        <item name="m4Superellipse">true</item>
+        <item name="m4MorphOnPress">true</item>
+
+        <item name="m4MotionShort">140</item>
+        <item name="m4MotionMedium">260</item>
+        <item name="m4MotionLong">420</item>
+        <item name="m4SpringStiffness">420.0</item>
+        <item name="m4SpringDamping">0.78</item>
+        <item name="m4ReducedMotion">false</item>
+
+        <item name="m4TouchTarget">48dp</item>
+        <item name="m4HapticsEnabled">true</item>
+        <item name="m4HighContrast">false</item>
+
+        <item name="m4DisplayTextAppearance">@style/TextAppearance.Material4.Display</item>
+        <item name="m4HeadlineTextAppearance">@style/TextAppearance.Material4.Headline</item>
+        <item name="m4TitleTextAppearance">@style/TextAppearance.Material4.Title</item>
+        <item name="m4BodyTextAppearance">@style/TextAppearance.Material4.Body</item>
+        <item name="m4LabelTextAppearance">@style/TextAppearance.Material4.Label</item>
+
+        <item name="materialButtonStyle">@style/Widget.Material4.Button</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.Material4.Button.Outlined</item>
+        <item name="materialButtonTonalStyle">@style/Widget.Material4.Button.Tonal</item>
+        <item name="materialCardViewStyle">@style/Widget.Material4.Card</item>
+        <item name="materialSwitchStyle">@style/Widget.Material4.Switch</item>
+        <item name="checkboxStyle">@style/Widget.Material4.CheckBox</item>
+        <item name="radioButtonStyle">@style/Widget.Material4.RadioButton</item>
+        <item name="chipStyle">@style/Widget.Material4.Chip</item>
+        <item name="chipStandaloneStyle">@style/Widget.Material4.Chip</item>
+        <item name="chipGroupStyle">@style/Widget.Material4.ChipGroup</item>
+        <item name="textInputStyle">@style/Widget.Material4.TextInput</item>
+        <item name="textInputOutlinedStyle">@style/Widget.Material4.TextInput</item>
+        <item name="tabStyle">@style/Widget.Material4.TabLayout</item>
+        <item name="sliderStyle">@style/Widget.Material4.Slider</item>
+        <item name="floatingActionButtonStyle">@style/Widget.Material4.Fab</item>
+        <item name="extendedFloatingActionButtonStyle">@style/Widget.Material4.ExtendedFab</item>
+        <item name="materialDividerStyle">@style/Widget.Material4.Divider</item>
+        <item name="bottomNavigationStyle">@style/Widget.Material4.NavigationBar</item>
+        <item name="navigationRailStyle">@style/Widget.Material4.NavigationRail</item>
+        <item name="toolbarStyle">@style/Widget.Material4.Toolbar</item>
+        <item name="materialSearchBarStyle">@style/Widget.Material4.SearchBar</item>
+        <item name="materialSearchViewStyle">@style/Widget.Material4.SearchView</item>
+        <item name="badgeStyle">@style/Widget.Material4.Badge</item>
+        <item name="circularProgressIndicatorStyle">@style/Widget.Material4.CircularProgress</item>
+        <item name="linearProgressIndicatorStyle">@style/Widget.Material4.LinearProgress</item>
+        <item name="bottomAppBarStyle">@style/Widget.Material4.BottomAppBar</item>
+        <item name="snackbarStyle">@style/Widget.Material4.Snackbar</item>
+        <item name="bottomSheetStyle">@style/Widget.Material4.BottomSheet</item>
+    </style>
+
+    <style name="ThemeOverlay.Material4.HighContrast" parent="ThemeOverlay.Material4">
+        <item name="m4HighContrast">true</item>
+        <item name="m4ComparisonMode">false</item>
+        <item name="m4Superellipse">false</item>
+        <item name="m4MorphOnPress">false</item>
+        <item name="m4AuroraStart">@color/m4_hc_primary</item>
+        <item name="m4AuroraMid">@color/m4_hc_accent</item>
+        <item name="m4AuroraEnd">@color/m4_hc_primary</item>
+        <item name="m4GlassSurface">@color/m4_hc_surface</item>
+        <item name="m4GlassBorderStart">@color/m4_hc_outline</item>
+        <item name="m4GlassBorderEnd">@color/m4_hc_outline</item>
+        <item name="m4InnerGlow">@android:color/transparent</item>
+        <item name="colorPrimary">@color/m4_hc_primary</item>
+        <item name="colorOnPrimary">@color/m4_hc_on_primary</item>
+        <item name="colorPrimaryContainer">@color/m4_hc_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/m4_hc_on_primary_container</item>
+        <item name="colorSecondary">@color/m4_hc_accent</item>
+        <item name="colorOnSecondary">@color/m4_hc_on_accent</item>
+        <item name="colorSurface">@color/m4_hc_surface</item>
+        <item name="colorOnSurface">@color/m4_hc_on_surface</item>
+        <item name="colorSurfaceVariant">@color/m4_hc_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/m4_hc_on_surface</item>
+        <item name="colorOutline">@color/m4_hc_outline</item>
+        <item name="colorOutlineVariant">@color/m4_hc_outline</item>
+    </style>
+
+    <style name="Theme.Material4" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Material4</item>
+        <item name="m4AuroraStart">@color/m4_aurora_start</item>
+        <item name="m4AuroraMid">@color/m4_aurora_mid</item>
+        <item name="m4AuroraEnd">@color/m4_aurora_end</item>
+        <item name="m4OnAurora">#FF0B1020</item>
+        <item name="m4GlassSurface">@color/m4_glass_light</item>
+        <item name="m4GlassBorderStart">@color/m4_border_light_start</item>
+        <item name="m4GlassBorderEnd">@color/m4_border_light_end</item>
+        <item name="m4InnerGlow">@color/m4_glow_light</item>
+        <item name="m4Success">@color/m4_success</item>
+        <item name="m4Warning">@color/m4_warning</item>
+        <item name="m4Elevation1">1dp</item>
+        <item name="m4Elevation2">2dp</item>
+        <item name="m4Elevation3">4dp</item>
+        <item name="m4Elevation4">8dp</item>
+        <item name="m4Elevation5">16dp</item>
+        <item name="m4BorderWidth">1dp</item>
+        <item name="m4GlowWidth">12dp</item>
+        <item name="m4RadiusSmall">10dp</item>
+        <item name="m4RadiusMedium">16dp</item>
+        <item name="m4RadiusLarge">24dp</item>
+        <item name="m4RadiusExtraLarge">32dp</item>
+        <item name="m4Superellipse">true</item>
+        <item name="m4MorphOnPress">true</item>
+        <item name="m4MotionShort">140</item>
+        <item name="m4MotionMedium">260</item>
+        <item name="m4MotionLong">420</item>
+        <item name="m4SpringStiffness">420.0</item>
+        <item name="m4SpringDamping">0.78</item>
+        <item name="m4ReducedMotion">false</item>
+        <item name="m4TouchTarget">48dp</item>
+        <item name="m4HapticsEnabled">true</item>
+        <item name="m4HighContrast">false</item>
+        <item name="m4ComparisonMode">false</item>
+        <item name="m4DisplayTextAppearance">@style/TextAppearance.Material4.Display</item>
+        <item name="m4HeadlineTextAppearance">@style/TextAppearance.Material4.Headline</item>
+        <item name="m4TitleTextAppearance">@style/TextAppearance.Material4.Title</item>
+        <item name="m4BodyTextAppearance">@style/TextAppearance.Material4.Body</item>
+        <item name="m4LabelTextAppearance">@style/TextAppearance.Material4.Label</item>
+        <item name="materialButtonStyle">@style/Widget.Material4.Button</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.Material4.Button.Outlined</item>
+        <item name="materialButtonTonalStyle">@style/Widget.Material4.Button.Tonal</item>
+        <item name="materialCardViewStyle">@style/Widget.Material4.Card</item>
+        <item name="materialSwitchStyle">@style/Widget.Material4.Switch</item>
+        <item name="checkboxStyle">@style/Widget.Material4.CheckBox</item>
+        <item name="radioButtonStyle">@style/Widget.Material4.RadioButton</item>
+        <item name="chipStyle">@style/Widget.Material4.Chip</item>
+        <item name="chipStandaloneStyle">@style/Widget.Material4.Chip</item>
+        <item name="chipGroupStyle">@style/Widget.Material4.ChipGroup</item>
+        <item name="textInputStyle">@style/Widget.Material4.TextInput</item>
+        <item name="textInputOutlinedStyle">@style/Widget.Material4.TextInput</item>
+        <item name="tabStyle">@style/Widget.Material4.TabLayout</item>
+        <item name="sliderStyle">@style/Widget.Material4.Slider</item>
+        <item name="floatingActionButtonStyle">@style/Widget.Material4.Fab</item>
+        <item name="extendedFloatingActionButtonStyle">@style/Widget.Material4.ExtendedFab</item>
+        <item name="materialDividerStyle">@style/Widget.Material4.Divider</item>
+        <item name="bottomNavigationStyle">@style/Widget.Material4.NavigationBar</item>
+        <item name="navigationRailStyle">@style/Widget.Material4.NavigationRail</item>
+        <item name="toolbarStyle">@style/Widget.Material4.Toolbar</item>
+        <item name="materialSearchBarStyle">@style/Widget.Material4.SearchBar</item>
+        <item name="materialSearchViewStyle">@style/Widget.Material4.SearchView</item>
+        <item name="badgeStyle">@style/Widget.Material4.Badge</item>
+        <item name="circularProgressIndicatorStyle">@style/Widget.Material4.CircularProgress</item>
+        <item name="linearProgressIndicatorStyle">@style/Widget.Material4.LinearProgress</item>
+        <item name="bottomAppBarStyle">@style/Widget.Material4.BottomAppBar</item>
+        <item name="snackbarStyle">@style/Widget.Material4.Snackbar</item>
+        <item name="bottomSheetStyle">@style/Widget.Material4.BottomSheet</item>
+    </style>
+
+    <style name="ThemeOverlay.Material4.Material3Baseline" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="m4Superellipse">false</item>
+        <item name="m4MorphOnPress">false</item>
+        <item name="m4HapticsEnabled">false</item>
+        <item name="m4HighContrast">false</item>
+        <item name="m4ComparisonMode">true</item>
+    </style>
+
+    <!-- Widget styles. Each one only overrides public Material 3 style items. -->
+    <style name="Widget.Material4.Button" parent="Widget.Material3.Button">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Material4.Medium</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textAppearance">?attr/m4LabelTextAppearance</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/m4_button_stroke</item>
+    </style>
+
+    <style name="Widget.Material4.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Material4.Medium</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textAppearance">?attr/m4LabelTextAppearance</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="Widget.Material4.Button.Tonal" parent="Widget.Material3.Button.TonalButton">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Material4.Medium</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textAppearance">?attr/m4LabelTextAppearance</item>
+    </style>
+
+    <style name="Widget.Material4.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">24dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">?attr/colorOutlineVariant</item>
+        <item name="cardBackgroundColor">?attr/colorSurfaceContainerLow</item>
+    </style>
+
+    <style name="Widget.Material4.Switch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="android:minHeight">48dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="thumbTint">@color/m4_switch_thumb</item>
+        <item name="trackTint">@color/m4_switch_track</item>
+    </style>
+
+    <style name="Widget.Material4.CheckBox" parent="Widget.Material3.CompoundButton.CheckBox">
+        <item name="android:minHeight">48dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="buttonTint">@color/m4_checkbox_tint</item>
+    </style>
+
+    <style name="Widget.Material4.RadioButton" parent="Widget.Material3.CompoundButton.RadioButton">
+        <item name="android:minHeight">48dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="buttonTint">@color/m4_checkbox_tint</item>
+    </style>
+
+    <style name="Widget.Material4.Chip" parent="Widget.Material3.Chip.Assist">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Material4.Medium</item>
+        <item name="chipMinHeight">40dp</item>
+        <item name="chipMinTouchTargetSize">48dp</item>
+        <item name="android:textAppearance">?attr/m4LabelTextAppearance</item>
+    </style>
+
+    <style name="Widget.Material4.ChipGroup" parent="Widget.Material3.ChipGroup">
+        <item name="chipSpacingHorizontal">8dp</item>
+        <item name="chipSpacingVertical">8dp</item>
+        <item name="singleLine">false</item>
+    </style>
+
+    <style name="Widget.Material4.TextInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">16dp</item>
+        <item name="boxCornerRadiusTopEnd">16dp</item>
+        <item name="boxCornerRadiusBottomStart">16dp</item>
+        <item name="boxCornerRadiusBottomEnd">16dp</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="hintTextAppearance">?attr/m4BodyTextAppearance</item>
+    </style>
+
+    <style name="Widget.Material4.TabLayout" parent="Widget.Material3.TabLayout">
+        <item name="tabIndicatorFullWidth">false</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabRippleColor">?attr/colorControlHighlight</item>
+        <item name="tabTextAppearance">?attr/m4LabelTextAppearance</item>
+    </style>
+
+    <style name="Widget.Material4.Slider" parent="Widget.Material3.Slider">
+        <item name="thumbRadius">10dp</item>
+        <item name="trackHeight">6dp</item>
+        <item name="haloRadius">24dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="Widget.Material4.Fab" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Material4.Large</item>
+        <item name="elevation">6dp</item>
+    </style>
+
+    <style name="Widget.Material4.ExtendedFab" parent="Widget.Material3.ExtendedFloatingActionButton.Primary">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Material4.Large</item>
+        <item name="android:minHeight">56dp</item>
+    </style>
+
+    <style name="Widget.Material4.Divider" parent="Widget.Material3.MaterialDivider">
+        <item name="dividerThickness">1dp</item>
+        <item name="dividerColor">?attr/colorOutlineVariant</item>
+    </style>
+
+    <style name="Widget.Material4.NavigationBar" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemActiveIndicatorStyle">@style/Widget.Material4.NavigationBar.ActiveIndicator</item>
+        <item name="elevation">3dp</item>
+    </style>
+
+    <style name="Widget.Material4.NavigationBar.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="shapeAppearance">@style/ShapeAppearance.Material4.Medium</item>
+        <item name="android:color">?attr/colorSecondaryContainer</item>
+    </style>
+
+    <style name="Widget.Material4.NavigationRail" parent="Widget.Material3.NavigationRailView">
+        <item name="itemActiveIndicatorStyle">@style/Widget.Material4.NavigationRail.ActiveIndicator</item>
+    </style>
+
+    <style name="Widget.Material4.NavigationRail.ActiveIndicator" parent="Widget.Material3.NavigationRailView.ActiveIndicator">
+        <item name="shapeAppearance">@style/ShapeAppearance.Material4.Medium</item>
+        <item name="android:color">?attr/colorSecondaryContainer</item>
+    </style>
+
+    <style name="Widget.Material4.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="titleTextAppearance">?attr/m4TitleTextAppearance</item>
+        <item name="subtitleTextAppearance">?attr/m4BodyTextAppearance</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+    </style>
+
+    <style name="Widget.Material4.SearchBar" parent="Widget.Material3.SearchBar">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Material4.Full</item>
+        <item name="android:minHeight">56dp</item>
+    </style>
+
+    <style name="Widget.Material4.SearchView" parent="Widget.Material3.SearchView" />
+
+    <style name="Widget.Material4.Badge" parent="Widget.Material3.Badge">
+        <item name="backgroundColor">?attr/colorTertiary</item>
+        <item name="badgeTextColor">?attr/colorOnTertiary</item>
+    </style>
+
+    <style name="Widget.Material4.CircularProgress" parent="Widget.Material3.CircularProgressIndicator">
+        <item name="trackThickness">5dp</item>
+        <item name="indicatorSize">48dp</item>
+        <item name="trackCornerRadius">3dp</item>
+    </style>
+
+    <style name="Widget.Material4.LinearProgress" parent="Widget.Material3.LinearProgressIndicator">
+        <item name="trackThickness">6dp</item>
+        <item name="trackCornerRadius">3dp</item>
+    </style>
+
+    <style name="Widget.Material4.BottomAppBar" parent="Widget.Material3.BottomAppBar">
+        <item name="backgroundTint">?attr/colorSurfaceContainer</item>
+    </style>
+
+    <style name="Widget.Material4.Snackbar" parent="Widget.Material3.Snackbar">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Material4.Medium</item>
+        <item name="backgroundTint">?attr/colorInverseSurface</item>
+        <item name="android:layout_margin">12dp</item>
+    </style>
+
+    <style name="Widget.Material4.BottomSheet" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Material4.ExtraLarge</item>
+    </style>
+</resources>

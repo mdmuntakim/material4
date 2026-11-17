@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material 4 aurora colour tokens -->
+    <attr name="m4AuroraStart" format="color" />
+    <attr name="m4AuroraMid" format="color" />
+    <attr name="m4AuroraEnd" format="color" />
+    <attr name="m4GlassSurface" format="color" />
+    <attr name="m4GlassBorderStart" format="color" />
+    <attr name="m4GlassBorderEnd" format="color" />
+    <attr name="m4InnerGlow" format="color" />
+    <attr name="m4Success" format="color" />
+    <attr name="m4Warning" format="color" />
+    <attr name="m4OnAurora" format="color" />
+
+    <!-- Depth tokens -->
+    <attr name="m4Elevation1" format="dimension" />
+    <attr name="m4Elevation2" format="dimension" />
+    <attr name="m4Elevation3" format="dimension" />
+    <attr name="m4Elevation4" format="dimension" />
+    <attr name="m4Elevation5" format="dimension" />
+    <attr name="m4BorderWidth" format="dimension" />
+    <attr name="m4GlowWidth" format="dimension" />
+
+    <!-- Shape tokens -->
+    <attr name="m4RadiusSmall" format="dimension" />
+    <attr name="m4RadiusMedium" format="dimension" />
+    <attr name="m4RadiusLarge" format="dimension" />
+    <attr name="m4RadiusExtraLarge" format="dimension" />
+    <attr name="m4Superellipse" format="boolean" />
+    <attr name="m4MorphOnPress" format="boolean" />
+
+    <!-- Motion tokens -->
+    <attr name="m4MotionShort" format="integer" />
+    <attr name="m4MotionMedium" format="integer" />
+    <attr name="m4MotionLong" format="integer" />
+    <attr name="m4SpringStiffness" format="float" />
+    <attr name="m4SpringDamping" format="float" />
+    <attr name="m4ReducedMotion" format="boolean" />
+
+    <!-- Interaction / accessibility tokens -->
+    <attr name="m4TouchTarget" format="dimension" />
+    <attr name="m4HapticsEnabled" format="boolean" />
+    <attr name="m4HighContrast" format="boolean" />
+    <attr name="m4ComparisonMode" format="boolean" />
+
+    <!-- Type tokens -->
+    <attr name="m4DisplayTextAppearance" format="reference" />
+    <attr name="m4HeadlineTextAppearance" format="reference" />
+    <attr name="m4TitleTextAppearance" format="reference" />
+    <attr name="m4BodyTextAppearance" format="reference" />
+    <attr name="m4LabelTextAppearance" format="reference" />
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="m4_button_stroke">#44B9A7FF</color>
+    <color name="m4_hc_primary">#FFFFFFFF</color>
+    <color name="m4_hc_on_primary">#FF000000</color>
+    <color name="m4_hc_primary_container">#FF1C1C1C</color>
+    <color name="m4_hc_on_primary_container">#FFFFFFFF</color>
+    <color name="m4_hc_accent">#FF7AF2FF</color>
+    <color name="m4_hc_on_accent">#FF000000</color>
+    <color name="m4_hc_surface">#FF000000</color>
+    <color name="m4_hc_on_surface">#FFFFFFFF</color>
+    <color name="m4_hc_surface_variant">#FF1C1C1C</color>
+    <color name="m4_hc_outline">#FFFFFFFF</color>
+    <color name="m4_switch_thumb">#FFB9A7FF</color>
+    <color name="m4_switch_track">#88B9A7FF</color>
+    <color name="m4_checkbox_tint">#FFB9A7FF</color>
+</resources>

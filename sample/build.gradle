@@ -1,0 +1,83 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'io.material4.gallery'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId 'io.material4.gallery'
+        minSdk 26
+        targetSdk 36
+        versionCode 1
+        versionName '1.0.0'
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        vectorDrawables.useSupportLibrary true
+    }
+
+    signingConfigs {
+        release {
+            def storePath = System.getenv('MATERIAL4_KEYSTORE')
+            if (storePath) {
+                storeFile file(storePath)
+                storePassword System.getenv('MATERIAL4_KEYSTORE_PASSWORD')
+                keyAlias System.getenv('MATERIAL4_KEY_ALIAS')
+                keyPassword System.getenv('MATERIAL4_KEY_PASSWORD')
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            if (System.getenv('MATERIAL4_KEYSTORE')) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+
+    lint {
+        abortOnError true
+        checkReleaseBuilds true
+    }
+}
+
+dependencies {
+    implementation project(':material4')
+    implementation 'androidx.appcompat:appcompat:1.8.0'
+    implementation 'androidx.activity:activity:1.13.0'
+    implementation 'androidx.fragment:fragment:1.9.1'
+    implementation 'androidx.recyclerview:recyclerview:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.2'
+    implementation 'androidx.drawerlayout:drawerlayout:1.2.0'
+    implementation 'androidx.window:window:1.5.1'
+    implementation 'androidx.dynamicanimation:dynamicanimation:1.1.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.robolectric:robolectric:4.18'
+    testImplementation 'androidx.test:core:1.7.0'
+    testImplementation 'androidx.test.ext:junit:1.3.0'
+
+    androidTestImplementation 'androidx.test.ext:junit:1.3.0'
+    androidTestImplementation 'androidx.test:runner:1.7.0'
+    androidTestImplementation 'androidx.test:rules:1.7.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.7.0'
+    androidTestImplementation 'androidx.test.uiautomator:uiautomator:2.4.1'
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="m4_aurora_start">#FF7C4DFF</color>
+    <color name="m4_aurora_mid">#FF00D9FF</color>
+    <color name="m4_aurora_end">#FFFF4D9D</color>
+    <color name="m4_glass_light">#8CFFFFFF</color>
+    <color name="m4_glass_dark">#9914181F</color>
+    <color name="m4_border_light_start">#CCFFFFFF</color>
+    <color name="m4_border_light_end">#667C4DFF</color>
+    <color name="m4_border_dark_start">#33FFFFFF</color>
+    <color name="m4_border_dark_end">#6600D9FF</color>
+    <color name="m4_glow_light">#337C4DFF</color>
+    <color name="m4_glow_dark">#5500D9FF</color>
+    <color name="m4_success">#FF146C2E</color>
+    <color name="m4_warning">#FF7A5900</color>
+    <color name="m4_seed_indigo">#FF4F46E5</color>
+    <color name="m4_seed_cyan">#FF0E7490</color>
+    <color name="m4_seed_pink">#FFBE185D</color>
+    <color name="m4_seed_green">#FF2E7D32</color>
+    <color name="m4_seed_amber">#FFB45309</color>
+    <color name="m4_seed_violet">#FF7E22CE</color>
+</resources>
