@@ -334,7 +334,7 @@
 
     <style name="Widget.Material4.Snackbar" parent="Widget.Material3.Snackbar">
         <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Material4.Medium</item>
-        <item name="backgroundTint">?attr/colorInverseSurface</item>
+        <item name="backgroundTint">?attr/colorSurfaceInverse</item>
         <item name="android:layout_margin">12dp</item>
     </style>
 

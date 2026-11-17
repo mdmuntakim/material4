@@ -205,6 +205,19 @@ public final class Material4Motion {
         return transform;
     }
 
+    /** Platform transition variant for Activity shared elements (API 26+). */
+    @NonNull
+    public static com.google.android.material.transition.platform.MaterialContainerTransform
+            containerTransformPlatform(@NonNull Context context) {
+        com.google.android.material.transition.platform.MaterialContainerTransform transform =
+                new com.google.android.material.transition.platform.MaterialContainerTransform(
+                        context, false);
+        Material4Tokens tokens = Material4Tokens.from(context);
+        transform.setDuration(duration(context, tokens.motionLong));
+        transform.setInterpolator(emphasized());
+        return transform;
+    }
+
     @NonNull
     public static MaterialFadeThrough fadeThrough(@NonNull Context context) {
         Material4Tokens tokens = Material4Tokens.from(context);

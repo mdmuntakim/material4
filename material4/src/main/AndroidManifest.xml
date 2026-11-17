@@ -1,4 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <application android:label="Material 4" android:theme="@style/Theme.Material4" />
-</manifest>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" />
