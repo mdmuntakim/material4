@@ -45,6 +45,12 @@ public final class Material4Adaptive {
     public static SizeClass sizeClass(@NonNull WindowMetrics metrics, @NonNull Context context) {
         Rect bounds = metrics.getBounds();
         int widthDp = Math.round(bounds.width() / context.getResources().getDisplayMetrics().density);
+        return sizeClassForWidthDp(widthDp);
+    }
+
+    /** Pure size-class function, also used by unit tests. */
+    @NonNull
+    public static SizeClass sizeClassForWidthDp(int widthDp) {
         if (widthDp >= 840) {
             return SizeClass.EXPANDED;
         }
